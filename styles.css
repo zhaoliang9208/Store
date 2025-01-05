@@ -1,4 +1,4 @@
-    body {
+body {
     background-color: rgb(41, 41, 41);
 }
 
@@ -9,6 +9,34 @@ a {
 
 h3 {
     color: white;
+}
+
+.navbar a:hover {
+    color: rgb(47, 47, 47);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: 0.5s;
+}
+
+h2 {
+    color: white;
+    justify-content: center;
+    text-align: justify;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.boton-inicio {
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    width: 10%;
+    height: auto;
 }
 
 button {
@@ -86,7 +114,7 @@ button:hover {
     margin: 10px;
 }
 
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 600px) {
     .header, .navbar, .producto {
         flex-direction: column;
         align-items: center;
@@ -96,5 +124,28 @@ button:hover {
         margin-right: 0;
         margin-bottom: 10px;
     }
-}
+} */
 
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body, .header, .navbar, .producto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        padding-top: 250px;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: rgb(41, 41, 41);    
+    }
+
+    .header img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
