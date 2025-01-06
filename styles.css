@@ -177,7 +177,8 @@ button:hover {
         top: 0;
         width: 100%;
         z-index: 1000;
-        background-color: rgb(41, 41, 41);    
+        background-color: rgb(41, 41, 41);
+        right: 0;
     }
 
     .header img {
