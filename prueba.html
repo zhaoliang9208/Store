@@ -8,16 +8,13 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a>
+            <li class="menu"><p>Menu</p>
                 <ul>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">SEO</a></li>
-                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Figuras</a></li>
+                    <li><a href="#">Pullovers</a></li>
                 </ul>
             </li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 
@@ -27,9 +24,15 @@
             padding: 0;
         }
 
-        nav ul li {
+        nav ul .menu {
             position: relative;
             display: inline-block;
+            color: white;
+            background-color: black;
+            border-radius: 25px;
+            width: 80px;
+            height: 50px;
+            text-align: center;
         }
 
         nav ul li ul {
@@ -50,6 +53,8 @@
             text-decoration: none;
             padding: 10px;
             display: block;
+            color: white;
+            background-color: black;
         }
 
         nav ul li ul li {
