@@ -42,7 +42,8 @@ h2 {
 }
 
 button {
-    background-color: blue;
+    background-color: rgb(88, 88, 88);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     border: 0;
     height: 30px;
     width: 90px;
@@ -58,7 +59,7 @@ button {
 }
 button:hover {
     background-color: rgb(62, 62, 147);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
 }
 
 .header {
@@ -129,7 +130,7 @@ button:hover {
 } */
 
 @media only screen and (min-width: 200px) and (max-width: 1024px) {
-    body, .header, .navbar, .productos, .producto {
+    body, .header, .navbar, .productos, .producto, .up {
         flex-direction: column;
         align-items: center;
     }
@@ -158,5 +159,16 @@ button:hover {
     .productos .boton-inicio {
         width: 25%;
         height: auto;
+    }
+
+    .up button{
+        position: fixed;
+        bottom: 20px;
+        width: 50px;
+        height: 50px;
+        z-index: 1000;
+        right: 20px;
+        background-color: rgb(88, 88, 88);    
+
     }
 }
