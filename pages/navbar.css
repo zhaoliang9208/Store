@@ -14,6 +14,7 @@ nav ul .navbar {
 }
 
 nav ul li ul {
+    opacity: 0;
     display: none;
     position: absolute;
     top: 100%;
@@ -22,10 +23,13 @@ nav ul li ul {
     list-style-type: none;
     background-color: rgba(88, 88, 88, 0.973);
     border-radius: 15px;
+    transition: display 0.5s, opacity 0.5s;
+    transition-behavior: allow-discrete;
 }
 
 nav ul li:hover ul {
     display: block;
+    opacity: 1;
 }
 
 nav ul li a {
@@ -42,4 +46,12 @@ nav ul li ul li {
 .navbar a:hover {
     color: rgb(47, 47, 47);
     transition: 0.5s;
+}
+
+@starting-style {
+
+    nav ul li:hover ul {
+        opacity: 0;
+    }
+
 }
