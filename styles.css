@@ -151,6 +151,12 @@ button:hover {
     margin: 10px;
 }
 
+.productos img:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+}
+
 /* @media only screen and (max-width: 600px) {
     .header, .navbar, .producto {
         flex-direction: column;
